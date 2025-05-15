@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Siswa X TKJ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+      margin: 0;
+      padding: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 2rem;
+    }
+
+    .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-width: 1000px; /* batasi lebar grid */
+  margin: 0 auto;     /* tengah-kan */
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 0.8s ease forwards;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      color: #1b819a;
+      margin-top: 0;
+    }
+
+    .card p {
+      margin: 0.2rem 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Daftar Biodata Siswa X TKJ</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Nevan K. Rusdi</h2>
+      <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+      <p><strong>NIS:</strong> 12345678</p>
+      <p><strong>Alamat:</strong> Jl. Merdeka No. 10</p>
+    </div>
+    <div class="card">
+      <h2>Fahri</h2>
+      <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+      <p><strong>NIS:</strong> 87654321</p>
+      <p><strong>Alamat:</strong> Jl. Anggrek No. 5</p>
+    </div>
+    <div class="card">
+      <h2>Alfan</h2>
+      <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+      <p><strong>NIS:</strong> 11223344</p>
+      <p><strong>Alamat:</strong> Jl. Melati No. 20</p>
+    </div>
+    <div class="card">
+      <h2>Safir</h2>
+      <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+      <p><strong>NIS:</strong> 44332211</p>
+      <p><strong>Alamat:</strong> Jl. Mawar No. 15</p>
+    </div>
+    <div class="card">
+      <h2>Adli</h2>
+      <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+      <p><strong>NIS:</strong> 55667788</p>
+      <p><strong>Alamat:</strong> Jl. Kenanga No. 30</p>
+    </div>
+    <div class="card">
+      <h2>Rasyid</h2>
+      <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+      <p><strong>NIS:</strong> 99887766</p>
+      <p><strong>Alamat:</strong> Jl. Cempaka No. 25</p>
+  </div>
+</body>
+</html>
